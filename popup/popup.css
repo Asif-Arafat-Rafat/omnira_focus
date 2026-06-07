@@ -1,0 +1,118 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0f1115;
+    color: #ffffff;
+    width: 280px;
+
+    border-radius: 14px;
+    overflow: hidden;
+
+}
+
+/* Container */
+.container {
+    padding: 14px;
+}
+
+/* Header */
+.header {
+    text-align: center;
+    margin-bottom: 16px;
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    border-radius: 12px;
+}
+
+h1 {
+    font-size: 18px;
+    margin: 6px 0 0;
+}
+
+.subtitle {
+    font-size: 11px;
+    color: #888;
+    margin: 4px 0 0;
+}
+
+/* Controls layout */
+.controls {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+/* Each setting row */
+.section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 12px;
+    background: #1a1d24;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.section:hover {
+    background: #222634;
+}
+
+/* =========================
+   TOGGLE SWITCH
+========================= */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 42px;
+    height: 24px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #3a3f4b;
+    transition: 0.25s;
+    border-radius: 34px;
+}
+
+/* knob */
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 18px;
+    width: 18px;
+    left: 3px;
+    bottom: 3px;
+    background-color: white;
+    transition: 0.25s;
+    border-radius: 50%;
+}
+
+/* ON state */
+.switch input:checked + .slider {
+    background-color: #4f7cff;
+}
+
+/* move knob */
+.switch input:checked + .slider:before {
+    transform: translateX(18px);
+}
+
+/* subtle glow */
+.switch input:checked + .slider {
+    box-shadow: 0 0 8px rgba(79, 124, 255, 0.4);
+}

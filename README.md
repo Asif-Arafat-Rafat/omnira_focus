@@ -12,7 +12,7 @@ It works as a lightweight **UI control layer** for distraction-free browsing acr
 - Enable/disable Sidebar
 - Control Recommendations feed
 - Hide or show Comments section
-- Works on dynamic SPA websites (like YouTube)
+- Works on dynamic SPA websites
 - Lightweight and fast performance
 - Persistent settings using Chrome Storage API
 
@@ -81,7 +81,7 @@ Click the extension icon to open the control panel and customize your browsing e
 
 ## 🧩 Future Improvements
 
-- Multi-site support (Netflix, X/Twitter, Instagram, etc.)
+- Multi-site support
 - Rule-based UI control engine
 - Focus presets (Study Mode, Work Mode, Relax Mode)
 - Performance optimizations for SPA-heavy websites
